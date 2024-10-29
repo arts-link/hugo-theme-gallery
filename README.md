@@ -2,12 +2,12 @@
 
 A very simple and opinionated photo gallery theme for Hugo.
 
-- [Demo](https://nicokaiser.github.io/hugo-theme-gallery/)
-- [Example site source](https://github.com/nicokaiser/hugo-theme-gallery/tree/main/exampleSite)
+- [Demo](https://arts-link.github.io/hugo-theme-gallery/)
+- [Example site source](https://github.com/arts-link/hugo-theme-gallery/tree/main/exampleSite)
 
 ---
 
-![Screenshot](https://github.com/nicokaiser/hugo-theme-gallery/raw/main/images/screenshot.jpg)
+![Screenshot](https://github.com/arts-link/hugo-theme-gallery/raw/main/images/screenshot.jpg)
 
 ---
 
@@ -38,13 +38,13 @@ Then add the theme to your `hugo.toml`:
 ```toml
 [module]
   [[module.imports]]
-    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+    path = "github.com/arts-link/hugo-theme-gallery/v4"
 ```
 
 ### As Git Submodule
 
 ```sh
-git submodule add --depth=1 https://github.com/nicokaiser/hugo-theme-gallery.git themes/gallery
+git submodule add --depth=1 https://github.com/arts-link/hugo-theme-gallery.git themes/gallery
 ```
 
 ## Usage
@@ -170,7 +170,7 @@ You can also use other taxonomies like `series`.  Note that only `categories` an
 
 ### Featured Content on the Homepage
 
-Albums (and als taxonomy pages like categories) can be marked as "featured":
+Albums (and also taxonomy pages like categories) can be marked as "featured":
 
 ```plain
 ---
