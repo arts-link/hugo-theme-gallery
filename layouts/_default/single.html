@@ -1,5 +1,18 @@
 {{ define "main" }}
   {{ partial "title.html" . }}
   {{ partial "gallery.html" . }}
+<div>
+  <div class="w-1/2 text-left">
+    {{ with .PrevInSection }}
+      <a class="w-1/2 text-left" href="{{ .RelPermalink }}"><i class="fa-regular fa-hand-point-left  px-2"></i> Previous: {{ .Title }}</a>
+    {{ end }}
+  </div>
+
+  <div class="w-1/2 text-right">
+    {{ with .NextInSection }}
+      <a class="w-1/2 text-right" href="{{ .RelPermalink }}">Next: {{ .Title }} <i class="fa-regular fa-hand-point-right  px-2"></i></a>
+    {{ end }}
+  </div>
+</div>
   {{ partial "related.html" . }}
 {{ end }}

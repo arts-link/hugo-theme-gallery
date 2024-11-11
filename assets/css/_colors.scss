@@ -15,14 +15,14 @@
   --text-2: var(--text-2-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --surface-1: var(--surface-1-dark);
-    --surface-2: var(--surface-2-dark);
-    --text-1: var(--text-1-dark);
-    --text-2: var(--text-2-dark);
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --surface-1: var(--surface-1-dark);
+//     --surface-2: var(--surface-2-dark);
+//     --text-1: var(--text-1-dark);
+//     --text-2: var(--text-2-dark);
+//   }
+// }
 
 html.light {
   color-scheme: light;

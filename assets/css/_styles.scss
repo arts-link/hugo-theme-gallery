@@ -87,18 +87,27 @@ body > footer {
   color: var(--text-2);
   font-size: 0.875rem;
   line-height: 1.25rem;
+  padding-bottom: 2rem;
 
-  section:last-of-type {
+  section {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 2.5rem;
-
-    a:hover {
-      text-decoration-line: underline;
-    }
+    margin-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
+  // section:last-of-type {
+  //   display: flex;
+  //   flex-flow: row wrap;
+  //   justify-content: center;
+  //   gap: 1rem;
+  //   padding: 2.5rem;
+
+  //   a:hover {
+  //     text-decoration-line: underline;
+  //   }
+  // }
 }
 
 hgroup {

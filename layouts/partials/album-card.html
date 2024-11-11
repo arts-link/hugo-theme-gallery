@@ -7,10 +7,12 @@
     <div>
       <h2>{{ .page.Title }}</h2>
       <p>
-        {{ if gt .albumCount 0 }}
+        {{ if gt .albumCount 1 }}
           {{ T "albumCount" (dict "count" (.albumCount | lang.FormatNumber 0) "photoCount" (.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
         {{ else }}
-          {{ T "photoCount" (.imageCount | lang.FormatNumber 0) }}
+          {{ if gt .imageCount 1 }}
+            {{ T "photoCount" (.imageCount | lang.FormatNumber 0) }}
+          {{ end }}
         {{ end }}
       </p>
     </div>

@@ -1,4 +1,5 @@
-{{ with site.Taxonomies.categories }}
+{{ $taxonomy := .taxonomy | default "series" }}
+{{ with (index site.Taxonomies $taxonomy) }}
   <nav class="categories">
     <ul>
       {{ range . }}
