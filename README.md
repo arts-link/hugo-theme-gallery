@@ -1,5 +1,7 @@
 # Hugo Gallery Theme
 
+## This is the arts-link fork, modified from the original
+
 A very simple and opinionated photo gallery theme for Hugo.
 
 - [Demo](https://arts-link.github.io/hugo-theme-gallery/)
