@@ -7,6 +7,12 @@
     <div>
       <h2>{{ .page.Title }}</h2>
       <p>
+        {{ with .page.Params.dimensions }}
+          {{ . }}
+        {{ end }}
+        {{ with .page.Params.media }}
+          {{ . }}
+        {{ end }}
         {{ if gt .albumCount 1 }}
           {{ T "albumCount" (dict "count" (.albumCount | lang.FormatNumber 0) "photoCount" (.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
         {{ else }}
