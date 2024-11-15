@@ -1,0 +1,13 @@
+{{- define "main" }}
+  {{- partial "title.html" . }}
+  <section>
+  <p>
+    {{ .Content }}
+  </p>
+  </section>
+  <section class="galleries">
+    {{ range .Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
+  </section>
+{{- end }}

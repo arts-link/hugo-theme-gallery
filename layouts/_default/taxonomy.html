@@ -1,0 +1,5 @@
+{{- define "main" }}
+  {{- partial "title.html" . }}
+  LIST-RECURSIVE TAXONOMY {{ .Kind }}
+  {{- partial "list-recursive.html" . }}
+{{- end }}
