@@ -58,7 +58,7 @@
           <div class="taxonomy-terms">
             {{ range $term, $pages := $terms }}
               <div class="term">
-                <a href="{{ $.Site.BaseURL }}{{ $taxonomy }}">{{ $term }}</a> ({{ len $pages }})
+                <a href="{{ $.Site.BaseURL }}{{ $taxonomy | urlize }}/{{ $term | urlize }}">{{ $term }}</a> ({{ len $pages }})
               </div>
             {{ end }}
           </div>
