@@ -59,6 +59,7 @@
             "dimensions"
             "media"
             "series"
+            "exhibition"
             "exhibited"
             "date_created"
             "buyer"
@@ -84,13 +85,13 @@
                   {{- end }}
                 {{- else if eq $col "series" }}
                   {{- range $value }}
-                    <a href="{{ $.Site.BaseURL }}/series/{{ . }}">{{ . }}</a><br/>
+                    <a href="{{ $.Site.BaseURL }}series/{{ . | urlize }}">{{ . }}</a><br/>
                   {{- end }}
                 {{- else if eq $col "media" }}
-                  <a href="{{ $.Site.BaseURL }}/media/{{ replace $value ` ` `-` }}">{{ $value }}</a><br/>
+                  <a href="{{ $.Site.BaseURL }}media/{{ $value | urlize }}">{{ $value }}</a><br/>
                 {{- else if eq $col "exhibition" }}
                   {{- range $value }}
-                    <a href="{{ $.Site.BaseURL }}/exhibition/{{ . }}">{{ . }}</a><br/>
+                    <a href="{{ $.Site.BaseURL }}exhibition/{{ . | urlize }}">{{ . }}</a><br/>
                   {{- end }}
                 {{- else }}
                   {{ $value }}

@@ -52,7 +52,7 @@
       {{ range $taxonomy, $terms := .Site.Taxonomies }}
         <div class="taxonomy-column">
           <!-- Taxonomy Name as Column Header -->
-          <div class="taxonomy-header">{{ $taxonomy | title }}</div>
+          <div class="taxonomy-header"><a href="{{ $.Site.BaseURL }}{{ $taxonomy | urlize }}">{{ $taxonomy | title }}</a></div>
   
           <!-- Terms with Count for Each Term -->
           <div class="taxonomy-terms">
